@@ -3,9 +3,8 @@ import XCTest
 
 final class awesomeQueueTests: XCTestCase {
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(awesomeQueue().text, "Hello, World!")
+        let queue = awesomeQueue<Int>()
+        queue.count
+        XCTAssertEqual(queue.count, 0)
     }
 }
