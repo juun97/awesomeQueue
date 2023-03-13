@@ -1,6 +1,10 @@
 public struct awesomeQueue<T> {
     private let list: LinkedList<T> = LinkedList()
-
+    
+    public init() {
+        
+    }
+    
     public var count: Int {
         return list.count
     }
